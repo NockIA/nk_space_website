@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+@media screen and (max-width : 900px) {
+    .line {
+        display: none;
+    }
+
+    .containerNav {
+        padding-top: 0;
+    }
+}
+
+.line {
+    width: 40%;
+    margin-left: 10vw;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: absolute;
+    z-index: 999;
+}
+
+.containerNav {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4vh;
+
+}
+
+.containerCat {
+    gap: .8vw;
+    font-weight: 700;
+    padding: 1rem;
+    user-select: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    border-bottom: 3px solid transparent;
+}
+
+.containerCat:hover {
+    border-bottom: 3px solid white;
+}
+
+.containerCat:active {
+    border-bottom: 3px solid white;
+}
+
+
+.containerCat .title {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
+
+.containerLinks {
+    justify-content: space-between;
+    max-width: 50vw;
+    gap: 2vw;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    padding: 0 7vw;
+    padding-right: 9vw;
+
+}
+
+.containerNav .logo {
+    margin: 1rem;
+    margin-left: 3vw;
+    min-width: 7rem;
+    margin-right: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
