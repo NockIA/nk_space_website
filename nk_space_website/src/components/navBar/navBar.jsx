@@ -1,5 +1,5 @@
 import './navBar.css'
-import '../../templates/css/easyCss.css'
+import '../../templates/css/global.css'
 
 export const NavBar = () => {
     return (
@@ -9,26 +9,26 @@ export const NavBar = () => {
             <nav className='rowContainer containerLinks'>
                 <a href="/">
                     <div className='rowContainer containerCat alignCenter'>
-                        <h2>00</h2>
-                        <h2 className='title'>Home</h2>
+                        <h2 className='nbNav navText'>00</h2>
+                        <h2 className='navText'>Home</h2>
                     </div>
                 </a>
                 <a href="/">
                     <div className='rowContainer containerCat alignCenter'>
-                        <h2>01</h2>
-                        <h2 className='title'>Destination</h2>
+                        <h2 className='nbNav navText'>01</h2>
+                        <h2 className='navText'>Destination</h2>
                     </div>
                 </a>
                 <a href="/">
                     <div className='rowContainer containerCat alignCenter'>
-                        <h2>02</h2>
-                        <h2 className='title'>Crew</h2>
+                        <h2 className='nbNav navText'>02</h2>
+                        <h2 className='navText'>Crew</h2>
                     </div>
                 </a>
                 <a href="/">
                     <div className='rowContainer containerCat alignCenter'>
-                        <h2>03</h2>
-                        <h2 className='title'>Technology</h2>
+                        <h2 className='nbNav navText'>03</h2>
+                        <h2 className='navText'>Technology</h2>
                     </div>
                 </a>
             </nav>

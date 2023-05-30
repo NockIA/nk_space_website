@@ -1,0 +1,57 @@
+
+.containerPlanetMenu {
+    gap: 2vw;
+    
+}
+
+.containerPlanetMenu h2 {
+    padding: .8rem 0rem;
+    color: #D0D6F9;
+    border: 3px solid transparent;
+}
+
+.containerPlanetMenu h2:hover {
+    border-bottom: 3px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.planetName {
+    text-transform: uppercase;
+    margin-top: 3vh;
+}
+
+.lineDescription{
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+    background: #383B4B;
+    z-index: 999;
+    display: block;
+    margin-top: 3.5rem;
+}
+
+
+.descriptionPlanet {
+    width: 25vw;
+    white-space: pre-wrap;
+}
+
+.containerPlanetContent {
+    width: max-content;
+}
+
+.containerPlanetStats {
+    gap: 3vw;
+}
+
+.planetImage {
+    width: 30rem;
+    height: 30rem;
+}
+
+.containerPlanetComp {
+    gap: 10vw;
+    margin-top: 10vh;
+    height: 30rem;
+}
