@@ -18,12 +18,12 @@ export const DestinationComponent = (props) => {
         datas = result
     }
     return (
-        <div className='rowContainer alignCenter containerPlanetComp'>   
-            <img className='planetImage' src={Object.values(result[currentPlanet])[1].png} alt="planet_image" />
+        <div className='rowContainer containerPlanetComp'>   
+            <img className='planetImage' src={datas && Object.values(result[currentPlanet])[1].png} alt="planet_image" />
             <div className='columnContainer containerPlanetContent '>
                 <nav className='rowContainer containerPlanetMenu'>
                     {datas && Object.keys(datas).map(planetName => (
-                        <h2 onClick={() => setCurrentPlanet(planetName)} className='navText'>{planetName}</h2>
+                        <h2 onClick={() => setCurrentPlanet(planetName)} style={{borderBottom: (planetName == currentPlanet) && "3px solid white"}} className='navText'>{planetName}</h2>
                     ))}
                 </nav>
                 <h2 className='planetName'>{currentPlanet}</h2>
