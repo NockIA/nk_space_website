@@ -11,32 +11,36 @@ export const DestinationComponent = (props) => {
     }, [])
     const [result, setResult] = useState([])
     const [currentPlanet , setCurrentPlanet] = useState(props.planet)
-    let imgSrc = ""
-    let datas = false
-    console.log('res',result);
-    if (result != undefined && result.length != 0) {
-        datas = result
+    const [currentImg , setCurrentImg] = useState("")
+    function setPlanet (name) {
+        setCurrentImg(name)
+        setCurrentPlanet(name)
     }
+    useEffect(() => {
+        if (result !== undefined && result.length !== 0) {
+          setCurrentImg(Object.values(result[currentPlanet])[1].png);
+        }
+      }, [result, currentPlanet]);
     return (
         <div className='rowContainer containerPlanetComp'>   
-            <img className='planetImage' src={datas && Object.values(result[currentPlanet])[1].png} alt="planet_image" />
+            <img className='planetImage' src={currentImg} alt="planet_image" />
             <div className='columnContainer containerPlanetContent '>
                 <nav className='rowContainer containerPlanetMenu'>
-                    {datas && Object.keys(datas).map(planetName => (
-                        <h2 onClick={() => setCurrentPlanet(planetName)} style={{borderBottom: (planetName == currentPlanet) && "3px solid white"}} className='navText'>{planetName}</h2>
+                    {Object.keys(result).map((planetName,x) => (
+                        <h2 key={x} onClick={() => setPlanet(planetName)} style={{borderBottom: (planetName == currentPlanet) && "3px solid white"}} className='navText'>{planetName}</h2>
                     ))}
                 </nav>
                 <h2 className='planetName'>{currentPlanet}</h2>
-                <p className='descriptionPlanet'>{datas && datas[currentPlanet].description}</p>
+                <p className='descriptionPlanet'>{result[currentPlanet] && result[currentPlanet].description}</p>
                 <span className='lineDescription'></span>
                 <div className='rowContainer containerPlanetStats'>
                     <div className='colunmContainer'>
                         <p className='subHeading_2 coloredText'>AVG. DISTANCE</p>
-                        <p className='subHeading_1'>{datas && datas[currentPlanet].distance}</p>
+                        <p className='subHeading_1'>{result[currentPlanet] && result[currentPlanet].distance}</p>
                     </div>
                     <div className='colunmContainer'>
                         <p className='subHeading_2 coloredText'>Est. travel time</p>
-                        <p className='subHeading_1'>{datas && datas[currentPlanet].travel}</p>
+                        <p className='subHeading_1'>{result[currentPlanet] && result[currentPlanet].travel}</p>
                     </div>
                 </div>
             </div>
