@@ -23,12 +23,12 @@ export const TechComponent = (props) => {
     }, [result, currentStep]);
     return (
         <div className='rowContainer containerContentTech'>
-            <nav className='colunmContainer containerMenuLauch'>
+            <nav className='columnContainer containerMenuLauch'>
                 {Object.keys(result).map((stepLauch,x) => (
                    <span key={x} onClick={() => setLaunch(stepLauch)} style={{backgroundColor :( stepLauch == currentStep) && "white",color: (stepLauch == currentStep) && 'black'}}className='btnLauch'>{x}</span>
                 ))}
             </nav>
-            <div className='colunmContainer techDescription'>
+            <div className='columnContainer techDescription'>
                 <h5>THE TERMINOLOGY…</h5>
                 <h3>{currentStep}</h3>
                 <p>{result[currentStep] && result[currentStep].description}</p>

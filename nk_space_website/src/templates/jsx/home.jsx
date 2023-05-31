@@ -11,7 +11,7 @@ export const Home = () => {
         window.addEventListener('resize', handleResize);
       }, [screenWidth]);
     return (
-        <div className='colunmContainer containerHomePage' style={{backgroundImage:((screenWidth < 640) && `url(${"./src/assets/home/background-home-mobile.jpg"})`) || ((screenWidth >= 640 && screenWidth < 1100) && `url(${"./src/assets/home/background-home-tablet.jpg"})`) || `url(${"./src/assets/home/background-home-desktop.jpg"})` }}>
+        <div className='columnContainer containerHomePage' style={{backgroundImage:((screenWidth < 640) && `url(${"./src/assets/home/background-home-mobile.jpg"})`) || ((screenWidth >= 640 && screenWidth < 1100) && `url(${"./src/assets/home/background-home-tablet.jpg"})`) || `url(${"./src/assets/home/background-home-desktop.jpg"})` }}>
             <NavBar/>
             <div className='columnContainer containerTextHome'>
                 <h5>SO, YOU WANT TO TRAVEL TO</h5>

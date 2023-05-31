@@ -24,7 +24,7 @@ export const DestinationComponent = (props) => {
     return (
         <div className=' containerPlanetComp'>   
             <img className='planetImage' src={currentImg} alt="planet_image" />
-            <div className='colunmContainer containerPlanetContent '>
+            <div className='columnContainer containerPlanetContent '>
                 <nav className='rowContainer containerPlanetMenu'>
                     {Object.keys(result).map((planetName,x) => (
                         <h2 key={x} onClick={() => setPlanet(planetName)} style={{borderBottom: (planetName == currentPlanet) && "3px solid white"}} className='navText'>{planetName}</h2>
@@ -34,11 +34,11 @@ export const DestinationComponent = (props) => {
                 <p className='descriptionPlanet'>{result[currentPlanet] && result[currentPlanet].description}</p>
                 <span className='lineDescription'></span>
                 <div className='containerPlanetStats'>
-                    <div className='colunmContainer'>
+                    <div className='columnContainer'>
                         <p className='subHeading_2 coloredText'>AVG. DISTANCE</p>
                         <p className='subHeading_1'>{result[currentPlanet] && result[currentPlanet].distance}</p>
                     </div>
-                    <div className='colunmContainer'>
+                    <div className='columnContainer'>
                         <p className='subHeading_2 coloredText'>Est. travel time</p>
                         <p className='subHeading_1'>{result[currentPlanet] && result[currentPlanet].travel}</p>
                     </div>

@@ -12,6 +12,12 @@
     h5 {
         font-size: 20px;
     }
+    h4 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 44px;
+    }
 }
 
 /*------------------------ Tablet && Computer Responsive ------------------------*/
@@ -22,6 +28,12 @@
     }
     h5 {
         font-size: 28px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 56px;
     }
 }
 
@@ -34,7 +46,7 @@
     flex-direction: row;
 }
 
-.colunmContainer {
+.columnContainer {
     display: flex;
     flex-direction: column;
 }
@@ -59,7 +71,7 @@ h4 {
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+
     line-height: 37px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -70,7 +82,7 @@ h3 {
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    font-size: 56px;
+
     line-height: 64px;
     text-transform: uppercase;
     color: #FFFFFF;

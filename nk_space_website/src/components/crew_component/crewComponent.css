@@ -1,42 +1,157 @@
+/*------------------------ Phone Responsive ------------------------*/
+
+@media screen and (max-width : 759px) {
+    .containerCrewComponent {
+        flex-direction: column;
+        gap: 8vh;
+    }
+    .crewImg {
+        max-height: 90%;
+        height: 15rem;
+        object-fit: contain;
+        margin-top: 4vh;
+    }
+
+    .contentContainerCrew {
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    .titleCrewPageContainer{
+       justify-content: center;
+    }
+    .lineCrew{
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 2px;
+        background: #383B4B;
+        z-index: 999;
+        display: block;
+      
+    }
+    .navCrewMembersContainer span {
+        width: .65rem;
+        height: .65rem;
+    }
+    .navCrewMembersContainer {
+        gap: 3vw;
+        margin-bottom: 3vh;
+    }
+}
+
+/*------------------------ Tablet Responsive ------------------------*/
+
+@media screen and (min-width:760px) and (max-width : 1199px) {
+    .containerCrewComponent {
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .crewImg {
+        max-height: 90%;
+        height: 50vh;
+        object-fit: contain;
+    }
+
+    .contentContainerCrew {
+        padding: 0 2rem;
+        text-align: center;
+        align-items: center;
+    }
+    .titleCrewPageContainer{
+        justify-content: flex-start; 
+        margin-bottom: 3vh;
+    }
+    .bioSize {
+        width: 65%;
+    }
+    .containerDescpCrew{
+        justify-content: center;
+        align-items: center;
+    }
+    .navCrewMembersContainer {
+        margin-top: 3vh;
+    }
+    .navCrewMembersContainer span {
+        width: .9rem;
+        height: .9rem;
+    }
+    .navCrewMembersContainer {
+        gap: 1vw;
+    
+    }
+   
+}
+
+/*------------------------ Computer Responsive ------------------------*/
+
+@media screen and (min-width : 1200px) {
+    .containerCrewComponent {
+        flex-direction: row;
+        height: 82vh;
+        gap: 8vw;
+    }
+    .crewImg {
+        object-fit: contain;
+        max-height: 90%;
+        margin-top: 10vh;
+        
+    }
+    .bioSize {
+        width: 75%;
+    }
+
+    
+    .contentContainerCrew {
+        width: 30vw;
+        margin-left: 15%;
+        margin-top: 5%;
+        height: 28vh;
+
+    }
+
+    .titleCrewPageContainer{
+        justify-content: flex-start;
+        margin-bottom: 13vh;
+    }
+
+    .navCrewMembersContainer {
+        margin-top: 12vh;
+    }
+   
+    .navCrewMembersContainer span {
+        width: .9rem;
+        height: .9rem;
+    }
+    .navCrewMembersContainer {
+        gap: 1vw;
+    
+    }
+}
+
+
 .roleColor {
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
 }
 
-.contentContainerCrew {
-    width: 30vw;
-    margin-left: 15%;
-    margin-top: 5%;
-    height: 28vh;
-}
-
-.bioSize {
-    width: 75%;
-}
 
 .roleMargin {
     margin-top: 1.5rem;
 }
 
 .containerCrewComponent {
-    gap: 8vw;
-    height: 82vh;
+    display: flex;
+
     margin-top: 3vh;
 }
 
-.crewImg {
-    object-fit: contain;
-    max-height: 90%;
-    margin-top: 10vh;
-    
-}
+
 
 .titleCrewPageContainer {
     gap: 1vw;
     width: 100%;
-    justify-content: flex-start;
-    margin-bottom: 13vh;
+
 }
 
 .numberTitleCrewPage {
@@ -51,21 +166,17 @@
     color: #FFFFFF;
 }
 
-.navCrewMembersContainer {
-    gap: 1vw;
-    margin-top: 12vh;
-}
+
 
 .navCrewMembersContainer span {
-    width: .9rem;
-    height: .9rem;
+   
     background-color: #ffffff77;
     border-radius: 999px;
 }
 
 .navCrewMembersContainer span:hover {
     cursor: pointer;
-    background-color: #FFFFFF;
+    background-color: #ffffffc5;
     transition: .3s;
 }
 

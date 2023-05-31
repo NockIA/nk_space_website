@@ -32,5 +32,6 @@
 .containerContentTech {
     width: 100%;
     justify-content: space-around;
+    align-items: center;
     margin-top: 9vh;
 }
