@@ -1,14 +1,4 @@
-.containerCrewPage {
-    min-width: 100vw;
-    min-height: 100vh;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter:brightness(80%) contrast(100%);
-    -webkit-filter:  brightness(80%) contrast(100%);
-    -moz-filter:  brightness(80%) contrast(100%);
-   
-}
+/*------------------------ Phone Responsive ------------------------*/
 
 @media screen and (max-width : 759px) {
     .containerCrewPage {
@@ -16,15 +6,15 @@
     }
 }
 
-/*------------------------ Tablet Responsive ------------------------*/
+/*------------------------ Containers ------------------------*/
 
-@media screen and (min-width:760px) and (max-width : 1199px) {
-
-}
-
-/*------------------------ Computer Responsive ------------------------*/
-
-@media screen and (min-width : 1200px) {
-
-   
+.containerCrewPage {
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(80%) contrast(100%);
+    -webkit-filter:  brightness(80%) contrast(100%);
+    -moz-filter:  brightness(80%) contrast(100%);
 }

@@ -16,7 +16,7 @@
         font-size: 16px;
     }
     h3 {
-        font-size: 44px;
+        font-size: 35px;
     }
 }
 
@@ -37,9 +37,7 @@
     }
 }
 
-
-
-
+/*------------------------ Containers ------------------------*/
 
 .rowContainer {
     display: flex;
@@ -51,16 +49,19 @@
     flex-direction: column;
 }
 
+/*------------------------ Aligns ------------------------*/
+
 .alignCenter {
     justify-content: center;
     align-items: center;
 }
 
+/*------------------------ Texts ------------------------*/
+
 h5 {
     font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
-
     line-height: 34px;
     letter-spacing: 4.725px;
     color: #D0D6F9;
@@ -71,7 +72,6 @@ h4 {
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-
     line-height: 37px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -82,7 +82,6 @@ h3 {
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-
     line-height: 64px;
     text-transform: uppercase;
     color: #FFFFFF;

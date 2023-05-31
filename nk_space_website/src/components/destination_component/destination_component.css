@@ -1,3 +1,5 @@
+/*------------------------ Animations ------------------------*/
+
 @keyframes rotatePlanet {
     0% {
         transform: rotate(0deg);
@@ -10,10 +12,6 @@
 /*------------------------ Phone Responsive ------------------------*/
 
 @media screen and (max-width : 759px) {
-    .planetImage {
-        width: 15rem;
-        height: 15rem;
-    }
     .containerPlanetComp {
         flex-direction: column;
         margin-top: 3vh;
@@ -21,15 +19,6 @@
     .containerPlanetContent{
         align-items: center;
         width: 100%;
-    }
-    .descriptionPlanet {
-        text-align: center;
-        padding: 1rem;
-    }
-    .lineDescription{
-        width: 90%;
-        margin: .5rem;
-        margin-bottom: 2rem;
     }
     .containerPlanetStats {
         flex-direction: column;
@@ -37,16 +26,24 @@
         margin-bottom: 3vh;
         gap: 3vw;
     }
-    
+    .planetImage {
+        width: 15rem;
+        height: 15rem;
+    }
+    .descriptionPlanet {
+        padding: 1rem;
+        text-align: center;
+    }
+    .lineDescription{
+        width: 90%;
+        margin: .5rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /*------------------------ Tablet Responsive ------------------------*/
 
 @media screen and (min-width:760px) and (max-width : 1199px) {
-    .planetImage {
-        width: 20rem;
-        height: 20rem;
-    }
     .containerPlanetComp {
         flex-direction: column;
         margin-top: 3vh;
@@ -54,17 +51,6 @@
     .containerPlanetContent{
         align-items: center;
         width: 100%;
-  
-    }
-    .descriptionPlanet {
-        text-align: center;
-        padding: 1rem;
-        max-width: 60vw;
-    }
-    .lineDescription{
-        width: 80%;
-        margin: .5rem;
-        margin-bottom: 2rem;
     }
     .containerPlanetStats {
         flex-direction: row;
@@ -75,15 +61,25 @@
     .containerPlanetMenu {
         margin-top: -2rem;
     }
+    .planetImage {
+        width: 20rem;
+        height: 20rem;
+    }
+    .descriptionPlanet {
+        max-width: 60vw;
+        padding: 1rem;
+        text-align: center;
+    }
+    .lineDescription{
+        width: 80%;
+        margin: .5rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /*------------------------ Computer Responsive ------------------------*/
 
 @media screen and (min-width : 1200px) {
-    .planetImage {
-        width: 27rem;
-        height: 27rem;
-    }
     .containerPlanetComp {
         flex-direction: row;
         height: 30rem;
@@ -91,6 +87,14 @@
     }
     .containerPlanetContent {
         width: max-content;
+    }
+    .containerPlanetStats {
+        flex-direction: row;
+        gap: 3vw;
+    }
+    .planetImage {
+        width: 27rem;
+        height: 27rem;
     }
     .descriptionPlanet {
         width: 25vw;
@@ -100,65 +104,58 @@
         margin-top: 3.5rem;
         margin: 2rem 0;
     }
-    .containerPlanetStats {
-        flex-direction: row;
-        gap: 3vw;
-    }
 }
+
+/*------------------------ Containers ------------------------*/
 
 .containerPlanetMenu {
     gap: 2vw;
 }
 
-.lineDescription{
-    
-    height: 1px;
+.containerPlanetStats {
+    display: flex;
+}
 
-    background: #383B4B;
-    z-index: 999;
+.containerPlanetComp {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+/*------------------------ Others ------------------------*/
+
+.lineDescription{
     display: block;
-  
+    height: 1px;
+    z-index: 999;
+    background: #383B4B;
 }
 
 .planetImage {
-  
-    margin-top: 1rem;
     align-self: center;
+    margin-top: 1rem;
     animation: rotatePlanet 60s linear infinite;
     transform-style: preserve-3d;
 }
 
+/*------------------------ Texts ------------------------*/
 
 .containerPlanetMenu h2 {
     padding: .8rem 0rem;
-    color: #D0D6F9;
     border: 3px solid transparent;
+    color: #D0D6F9;
 }
 
 .containerPlanetMenu h2:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .planetName {
-    text-transform: uppercase;
     margin-top: 3vh;
+    text-transform: uppercase;
 }
-
 
 .descriptionPlanet {
     white-space: pre-wrap;
-}
-
-
-.containerPlanetStats {
-    display: flex;
-
-}
-
-
-.containerPlanetComp {
-    display: flex;
-    gap: 10vw;
-    justify-content: center;
 }

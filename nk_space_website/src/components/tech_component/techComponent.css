@@ -1,3 +1,5 @@
+/*------------------------ Phone Responsive ------------------------*/
+
 @media screen and (max-width : 759px) {
     .containerMenuLauch{
         flex-direction: row;
@@ -8,20 +10,19 @@
     }
     .techDescription {
         width: 65%;
-        text-align: center;
         margin-top: 5vh;
+        text-align: center;
     }
     .btnLauch {
+        width: 1.5rem;
         padding: .3rem .8rem;
         font-size: 20px;
-        width: 1.5rem;
         text-align: center;
     }
     .imgTech {
         width: 100%; 
     }
 }
-
 
 /*------------------------ Tablet Responsive ------------------------*/
 
@@ -35,13 +36,13 @@
     }
     .techDescription {
         width: 65%;
-        text-align: center;
         margin-top: 5vh;
+        text-align: center;
     }
     .btnLauch {
+        width: 1.5rem;
         padding: 1rem 1.5rem;
         font-size: 36px;
-        width: 1.5rem;
         text-align: center;
     }
     .imgTech {
@@ -68,6 +69,25 @@
     }
 }
 
+/*------------------------ Containers ------------------------*/
+
+.containerMenuLauch {
+    display: flex;
+    gap: 5vh;
+}
+
+.containerContentTech {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 9vh;
+}
+
+.techDescription{
+    gap: 3vh;
+}
+
+/*------------------------ Buttons ------------------------*/
 
 .btnLauch {
     display: flex;
@@ -89,22 +109,4 @@
 .btnLauch:hover {
     cursor: pointer;
     border: 3px solid white;
-}
-
-.containerMenuLauch {
-    gap: 5vh;
-    display: flex;
-}
-
-.techDescription{
-
-    gap: 3vh;
-}
-
-.containerContentTech {
-    display: flex;
-    width: 100%;
-
-    align-items: center;
-    margin-top: 9vh;
 }

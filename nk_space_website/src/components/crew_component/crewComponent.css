@@ -5,37 +5,35 @@
         flex-direction: column;
         gap: 8vh;
     }
-    .crewImg {
-        max-height: 90%;
-        height: 15rem;
-        object-fit: contain;
-        margin-top: 4vh;
-    }
-
     .contentContainerCrew {
-        padding: 2rem;
         text-align: center;
         align-items: center;
+        padding: 2rem;
     }
     .titleCrewPageContainer{
-       justify-content: center;
+        justify-content: center;
+    }
+    .navCrewMembersContainer {
+        margin-bottom: 3vh;
+        gap: 3vw;
+    }
+    .crewImg {
+        height: 15rem;
+        max-height: 90%;
+        margin-top: 4vh;
+        object-fit: contain;
     }
     .lineCrew{
-        width: 100%;
-        margin-bottom: 2rem;
-        height: 2px;
-        background: #383B4B;
-        z-index: 999;
         display: block;
-      
+        width: 100%;
+        height: 2px;
+        margin-bottom: 2rem;
+        z-index: 999;
+        background: #383B4B;
     }
     .navCrewMembersContainer span {
         width: .65rem;
         height: .65rem;
-    }
-    .navCrewMembersContainer {
-        gap: 3vw;
-        margin-bottom: 3vh;
     }
 }
 
@@ -46,23 +44,14 @@
         flex-direction: column;
         gap: 3vh;
     }
-    .crewImg {
-        max-height: 90%;
-        height: 50vh;
-        object-fit: contain;
-    }
-
     .contentContainerCrew {
-        padding: 0 2rem;
         text-align: center;
         align-items: center;
+        padding: 0 2rem;
     }
     .titleCrewPageContainer{
         justify-content: flex-start; 
         margin-bottom: 3vh;
-    }
-    .bioSize {
-        width: 65%;
     }
     .containerDescpCrew{
         justify-content: center;
@@ -71,15 +60,21 @@
     .navCrewMembersContainer {
         margin-top: 3vh;
     }
+    .navCrewMembersContainer {
+        gap: 1vw;
+    }
+    .crewImg {
+        height: 50vh;
+        max-height: 90%;
+        object-fit: contain;
+    }
+    .bioSize {
+        width: 65%;
+    }
     .navCrewMembersContainer span {
         width: .9rem;
         height: .9rem;
     }
-    .navCrewMembersContainer {
-        gap: 1vw;
-    
-    }
-   
 }
 
 /*------------------------ Computer Responsive ------------------------*/
@@ -90,75 +85,65 @@
         height: 82vh;
         gap: 8vw;
     }
-    .crewImg {
-        object-fit: contain;
-        max-height: 90%;
-        margin-top: 10vh;
-        
-    }
-    .bioSize {
-        width: 75%;
-    }
-
-    
     .contentContainerCrew {
         width: 30vw;
+        height: 28vh;
         margin-left: 15%;
         margin-top: 5%;
-        height: 28vh;
-
     }
-
     .titleCrewPageContainer{
         justify-content: flex-start;
         margin-bottom: 13vh;
     }
-
     .navCrewMembersContainer {
         margin-top: 12vh;
     }
-   
+    .navCrewMembersContainer {
+        gap: 1vw;
+    }
+    .crewImg {
+        max-height: 90%;
+        margin-top: 10vh;
+        object-fit: contain;
+    }
+    .bioSize {
+        width: 75%;
+    }
     .navCrewMembersContainer span {
         width: .9rem;
         height: .9rem;
     }
-    .navCrewMembersContainer {
-        gap: 1vw;
-    
-    }
 }
 
+/*------------------------ Containers ------------------------*/
+
+.containerCrewComponent {
+    display: flex;
+    margin-top: 3vh;
+}
+
+.titleCrewPageContainer {
+    width: 100%;
+    gap: 1vw;
+}
+
+/*------------------------ Texts ------------------------*/
 
 .roleColor {
-    color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
+    color: #FFFFFF;
 }
-
 
 .roleMargin {
     margin-top: 1.5rem;
 }
 
-.containerCrewComponent {
-    display: flex;
-
-    margin-top: 3vh;
-}
-
-
-
-.titleCrewPageContainer {
-    gap: 1vw;
-    width: 100%;
-
-}
-
 .numberTitleCrewPage {
     font-weight: 700;
-    color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.25;
+    color: #FFFFFF;
 }
 
 .titleCrewPage {
@@ -166,17 +151,13 @@
     color: #FFFFFF;
 }
 
-
-
 .navCrewMembersContainer span {
-   
-    background-color: #ffffff77;
     border-radius: 999px;
+    background-color: #ffffff77;
 }
 
 .navCrewMembersContainer span:hover {
     cursor: pointer;
-    background-color: #ffffffc5;
     transition: .3s;
+    background-color: #ffffffc5;
 }
-

@@ -3,21 +3,19 @@
 @media screen and (max-width : 759px) {
     .containerTextHome {
         width: 90%;
-        text-align: center;
         padding: 1rem;
         margin-top: 5vh;
-   
+        text-align: center;
+    }
+    .containerHomePage {
+        align-items: center;
     }
     .btnHomePage {
         padding: 5rem 1.5rem;
-        font-size: 32px;
-        line-height: 37px;
         margin-top: 5vh;
         margin-bottom: 5vh;
-    }
-
-    .containerHomePage {
-        align-items: center;
+        font-size: 32px;
+        line-height: 37px;
     }
 }
 
@@ -29,20 +27,19 @@
         margin-top: 8vh;
         text-align: center;
     }
+    .containerHomePage {
+        align-items: center;
+    }
     .btnHomePage {
+        right: 50%;
+        bottom: 20%;
         padding: 5rem 1.5rem;
         font-size: 32px;
         line-height: 37px;
-        right: 50%;
-        bottom: 20%;
-    }
-    .containerHomePage {
-        align-items: center;
     }
     .titleHomePage {
         margin-top: 2.5rem;
     }
-    
 }
 
 /*------------------------ Computer Responsive ------------------------*/
@@ -54,19 +51,19 @@
         margin-left: 12vw;
     }
     .btnHomePage {
+        position: absolute;
+        right: 15%;
+        bottom: 28%;
         padding: 7rem 3.5rem;
         font-size: 32px;
         line-height: 37px;
-        right: 15%;
-        bottom: 28%;
-        position: absolute;
     }
     .titleHomePage {
         margin-top: 2.5rem;
     }
-    
 }
 
+/*------------------------ Containers ------------------------*/
 
 .containerHomePage {
     min-width: 100vw;
@@ -78,20 +75,22 @@
     -moz-filter:  brightness(80%) contrast(100%);
 }
 
+/*------------------------ Buttons ------------------------*/
 
 .btnHomePage {
     text-transform: uppercase;
-    background-color: #CCDBFF;
-    color: black;
     border-radius: 999px;
+    letter-spacing: 2px;
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 2px;
+    outline: 0px solid rgba(255, 255, 255, 0);
+    color: black;
+    background-color: #CCDBFF;
 }
 
 .btnHomePage:hover {
-    color: black;
-    outline: 50px solid rgba(255, 255, 255, 0.151);
     transition: .5s;
+    outline: 50px solid rgba(255, 255, 255, 0.151);
+    color: black;
 }

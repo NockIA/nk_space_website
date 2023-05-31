@@ -12,8 +12,9 @@
         justify-content: flex-start;
         gap: 1vw;
     }
-   
 }
+
+/*------------------------ Containers ------------------------*/
 
 .techPageContainer {
     min-width: 100vw;
@@ -25,16 +26,16 @@
     -moz-filter:  brightness(80%) contrast(100%);
 }
 
+.titleTechPageContainer {
+    width: 100%;
+    margin-top: 6vh;
+}
+
+/*------------------------ Texts ------------------------*/
+
 .titleTechPage {
     text-transform: uppercase;
     color: #FFFFFF;
-}
-
-.titleTechPageContainer {
-
-    width: 100%;
-  
-    margin-top: 6vh;
 }
 
 .numberTitleTechPage {

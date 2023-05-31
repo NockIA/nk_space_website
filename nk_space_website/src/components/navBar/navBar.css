@@ -5,8 +5,8 @@
         display: none;
     }
     .containerNav {
-        padding-top: 4vh;
         width: 100%;
+        padding-top: 4vh;
     }
     .containerLinks {
         flex-direction: column;
@@ -34,8 +34,8 @@
         align-self: flex-end;
         margin: 2rem;
         margin-bottom: 8vh;
-        transform: scale(1.5);
         margin-top: 3rem;
+        transform: scale(1.5);
     }
     .burgerPlacement:hover{
         cursor: pointer;
@@ -82,7 +82,6 @@
         flex-direction: row; 
         gap: 2vw;
     }
-  
 }
 
 /*------------------------ Computer Responsive ------------------------*/
@@ -138,7 +137,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
     z-index: 999;
 }
 
@@ -162,11 +160,11 @@ a:hover {
 
 .line {
     width: 42vw;
-    margin-left: 10vw;
     height: 1px;
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.25;
+    margin-left: 10vw;
     position: absolute;
+    opacity: 0.25;
     z-index: 999;
+    mix-blend-mode: normal;
+    background: #FFFFFF;
 }
