@@ -1,7 +1,40 @@
+
+/*------------------------ Phone Responsive ------------------------*/
+
+@media screen and (max-width : 759px) {
+    .containerDestinationPage {
+        align-items: center;
+    }
+    .titleDestinationPageContainer {
+        justify-content: center;
+   }
+}
+
+/*------------------------ Tablet Responsive ------------------------*/
+
+@media screen and (min-width:760px) and (max-width : 1199px) {
+   .containerDestinationPage {
+        align-items: center;
+   }
+   .titleDestinationPageContainer {
+        justify-content: flex-start;
+   }
+}
+
+/*------------------------ Computer Responsive ------------------------*/
+
+@media screen and (min-width : 1200px) {
+   
+    .titleDestinationPageContainer {
+        justify-content: flex-start;
+    }
+}
+
 .containerDestinationPage {
+
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    height: max-content;
     background-repeat: no-repeat;
     background-size: cover;
     filter:brightness(80%) contrast(100%);
@@ -17,7 +50,7 @@
 .titleDestinationPageContainer {
     gap: 1vw;
     width: 100%;
-    justify-content: flex-start;
+
     margin-top: 6vh;
 }
 

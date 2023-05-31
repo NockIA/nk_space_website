@@ -5,7 +5,7 @@
         display: none;
     }
     .containerNav {
-        padding-top: 0;
+        padding-top: 4vh;
         width: 100%;
     }
     .containerLinks {
@@ -82,6 +82,7 @@
         flex-direction: row; 
         gap: 2vw;
     }
+  
 }
 
 /*------------------------ Computer Responsive ------------------------*/
@@ -117,6 +118,9 @@
         flex-direction: row; 
         gap: 2vw;
     }
+    .containerNav {
+        padding-top: 4vh;
+    }
 }
 
 /*------------------------ Containers ------------------------*/
@@ -134,7 +138,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4vh;
+  
     z-index: 999;
 }
 
