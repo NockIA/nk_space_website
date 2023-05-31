@@ -40,7 +40,7 @@ export const NavBar = () => {
                     </div>
                 </a>
                 <a href="/Technology">
-                    <div className='rowContainer containerCat alignCenter'style={{borderBottom : (isActive[4]== true) && " 3px solid white"}}>
+                    <div className='rowContainer containerCat alignCenter'style={{borderBottom : (isActive[3] == true) && " 3px solid white"}}>
                         <h2 className='nbNav navText'>03</h2>
                         <h2 className='navText'>Technology</h2>
                     </div>

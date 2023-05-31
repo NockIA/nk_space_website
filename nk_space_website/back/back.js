@@ -14,6 +14,12 @@ app.get('/Crew', async(req, res) => {
     res.json(data)
 });
 
+app.get('/Tech', async(req, res) => {
+    const data  = await fs.promises.readFile("./back/tech.json", {encoding : "utf-8"})
+    res.json(data)
+});
+
+
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}\n`)
 }); 

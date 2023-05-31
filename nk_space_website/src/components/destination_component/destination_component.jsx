@@ -10,8 +10,8 @@ export const DestinationComponent = (props) => {
         .catch(console.error)
     }, [])
     const [result, setResult] = useState([])
-    const [currentPlanet , setCurrentPlanet] = useState(props.planet)
     const [currentImg , setCurrentImg] = useState("")
+    const [currentPlanet , setCurrentPlanet] = useState(props.planet)
     function setPlanet (name) {
         setCurrentImg(name)
         setCurrentPlanet(name)

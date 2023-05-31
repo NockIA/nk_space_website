@@ -1,0 +1,30 @@
+.techPageContainer {
+    background-image: url(../../assets/technology/background-technology-desktop.jpg);
+    min-width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(80%) contrast(100%);
+    -webkit-filter:  brightness(80%) contrast(100%);
+    -moz-filter:  brightness(80%) contrast(100%);
+}
+
+.titleTechPage {
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.titleTechPageContainer {
+    gap: 1vw;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 6vh;
+}
+
+.numberTitleTechPage {
+    font-weight: 700;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-left: 8vw;
+}

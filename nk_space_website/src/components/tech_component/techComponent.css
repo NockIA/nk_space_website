@@ -1,0 +1,36 @@
+.btnLauch {
+    padding: 2.5rem ;
+    background-color: transparent;
+    border-radius: 999px;
+    /* border: 1px solid white; */
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    outline: 2px solid #ffffff7d;
+    border: 3px solid transparent;
+}
+
+.btnLauch:hover {
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.containerMenuLauch {
+    gap: 5vh;
+}
+
+.techDescription{
+    width: 23vw;
+    gap: 3vh;
+}
+
+.containerContentTech {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 9vh;
+}
