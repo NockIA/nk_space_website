@@ -1,4 +1,4 @@
-.containerHomePage {
+.containerDestinationPage {
     min-width: 100vw;
     min-height: 100vh;
     background-image: url('../../assets/destination/background-destination-desktop.jpg');
@@ -9,30 +9,19 @@
     -moz-filter:  brightness(80%) contrast(100%);
 }
 
-.titleHomePage {
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
+.titleDestinationPage {
     text-transform: uppercase;
 }
 
-.titleHomePageContainer {
+.titleDestinationPageContainer {
     gap: 1vw;
     width: 100%;
     justify-content: flex-start;
     margin-top: 6vh;
 }
 
-.numberTitleHomePage {
-    font-family: 'Barlow Condensed';
-    font-style: normal;
+.numberTitleDestinationPage {
     font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.25;
