@@ -1,3 +1,12 @@
+@keyframes rotatePlanet {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .containerPlanetMenu {
     gap: 2vw;
@@ -49,6 +58,8 @@
     height: 27rem;
     margin-top: 1rem;
     align-self: center;
+    animation: rotatePlanet 60s linear infinite;
+    transform-style: preserve-3d;
 }
 
 .containerPlanetComp {
