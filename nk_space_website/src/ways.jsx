@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home } from './templates/jsx/home';
+import { Destination } from './templates/jsx/destination';
 
 function Ways() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Destination />} />
         </Routes>
       </BrowserRouter>
     </>
