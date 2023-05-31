@@ -11,19 +11,32 @@ export const TechComponent = (props) => {
     const [result, setResult] = useState([])
     const [launchImg, setLaunchImg] = useState("")
     const [currentStep , setCurrentStep] = useState(props.launchState)
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+          setScreenWidth(window.innerWidth);
+        };      
+        window.addEventListener('resize', handleResize);
+    }, [screenWidth]);
+
     function setLaunch (name) {
         setLaunchImg(name)
         setCurrentStep(name)
     }
     useEffect(() => {
         if (result !== undefined && result.length !== 0) {
-            setLaunchImg(Object.values(result[currentStep])[1].portrait);
-            
+            if (screenWidth < 1200) {
+                setLaunchImg(Object.values(result[currentStep])[1].landscape);
+            } else {
+                setLaunchImg(Object.values(result[currentStep])[1].portrait);
+            }
         }
     }, [result, currentStep]);
+
     return (
-        <div className='rowContainer containerContentTech'>
-            <nav className='columnContainer containerMenuLauch'>
+        <div className='containerContentTech'>
+            {(screenWidth < 1200) && <img className='imgTech' src={launchImg} alt="lauch_img" />}
+            <nav className='containerMenuLauch'>
                 {Object.keys(result).map((stepLauch,x) => (
                    <span key={x} onClick={() => setLaunch(stepLauch)} style={{backgroundColor :( stepLauch == currentStep) && "white",color: (stepLauch == currentStep) && 'black'}}className='btnLauch'>{x}</span>
                 ))}
@@ -33,7 +46,7 @@ export const TechComponent = (props) => {
                 <h3>{currentStep}</h3>
                 <p>{result[currentStep] && result[currentStep].description}</p>
             </div>
-            <img src={launchImg} alt="lauch_img" />
+            {(screenWidth >= 1200) && <img src={launchImg} alt="lauch_img" />}
         </div>
     )
 }

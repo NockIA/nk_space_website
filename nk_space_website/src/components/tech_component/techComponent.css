@@ -1,12 +1,83 @@
+@media screen and (max-width : 759px) {
+    .containerMenuLauch{
+        flex-direction: row;
+        margin-top: 6vh;
+    }
+    .containerContentTech {
+        flex-direction: column;
+    }
+    .techDescription {
+        width: 65%;
+        text-align: center;
+        margin-top: 5vh;
+    }
+    .btnLauch {
+        padding: .3rem .8rem;
+        font-size: 20px;
+        width: 1.5rem;
+        text-align: center;
+    }
+    .imgTech {
+        width: 100%; 
+    }
+}
+
+
+/*------------------------ Tablet Responsive ------------------------*/
+
+@media screen and (min-width:760px) and (max-width : 1199px) {
+    .containerMenuLauch{
+        flex-direction: row;
+        margin-top: 6vh;
+    }
+    .containerContentTech {
+        flex-direction: column;
+    }
+    .techDescription {
+        width: 65%;
+        text-align: center;
+        margin-top: 5vh;
+    }
+    .btnLauch {
+        padding: 1rem 1.5rem;
+        font-size: 36px;
+        width: 1.5rem;
+        text-align: center;
+    }
+    .imgTech {
+        width: 100%; 
+    }
+}
+
+/*------------------------ Computer Responsive ------------------------*/
+
+@media screen and (min-width : 1200px) {
+    .containerMenuLauch{
+        flex-direction: column;
+    }
+    .containerContentTech{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .techDescription {
+        width: 23vw;
+    }
+    .btnLauch {
+        padding: 2.5rem ;
+        font-size: 72px;
+    }
+}
+
+
 .btnLauch {
-    padding: 2.5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     border-radius: 999px;
-    /* border: 1px solid white; */
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    font-size: 72px;
     line-height: 37px;
     text-align: center;
     letter-spacing: 2px;
@@ -22,16 +93,18 @@
 
 .containerMenuLauch {
     gap: 5vh;
+    display: flex;
 }
 
 .techDescription{
-    width: 23vw;
+
     gap: 3vh;
 }
 
 .containerContentTech {
+    display: flex;
     width: 100%;
-    justify-content: space-around;
+
     align-items: center;
     margin-top: 9vh;
 }

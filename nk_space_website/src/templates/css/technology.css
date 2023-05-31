@@ -1,5 +1,21 @@
+@media screen and (max-width : 759px) {
+    .titleTechPageContainer {
+        justify-content: center;
+        gap: 3vw;
+    }
+}
+
+/*------------------------ Computer Responsive ------------------------*/
+
+@media screen and (min-width : 760px) {
+    .titleTechPageContainer {
+        justify-content: flex-start;
+        gap: 1vw;
+    }
+   
+}
+
 .techPageContainer {
-    background-image: url(../../assets/technology/background-technology-desktop.jpg);
     min-width: 100vw;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -15,9 +31,9 @@
 }
 
 .titleTechPageContainer {
-    gap: 1vw;
+
     width: 100%;
-    justify-content: flex-start;
+  
     margin-top: 6vh;
 }
 
