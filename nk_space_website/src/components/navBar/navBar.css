@@ -1,66 +1,140 @@
+/*------------------------ Phone Responsive ------------------------*/
 
-@media screen and (max-width : 900px) {
+@media screen and (max-width : 760px) {
     .line {
         display: none;
     }
-
     .containerNav {
         padding-top: 0;
     }
+    .containerLinks {
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+    .containerCat {
+        margin: 1rem 0rem 1rem 1rem;
+        padding-right: 5rem;
+        padding-left: 1.5rem;
+        gap: 3vw;
+        border-right: 3px solid transparent;
+    }
+    .containerCat:hover {
+        border-right: 3px solid rgba(255, 255, 255, 0.5);
+    }
+    .containerNav .logo {
+        min-width: 7rem;
+        margin-left: 8vw;
+        margin-right: 5rem;
+    }
+    .burgerPlacement {
+        align-self: flex-end;
+        margin: 2rem;
+        margin-bottom: 8vh;
+    }
+    .burgerPlacement:hover{
+        cursor: pointer;
+    }
+    .containerLinksGap {
+        display: flex;
+        flex-direction: column; 
+        gap: 2vw;
+    }
 }
 
-.line {
-    width: 43%;
-    margin-left: 10vw;
-    height: 1px;
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.25;
-    position: absolute;
-    z-index: 999;
+/*------------------------ Tablet Responsive ------------------------*/
+
+@media screen and (min-width:760px) and (max-width : 1200px) {
+    .line {
+        display: none;
+    }
+    .containerLinks {
+        flex-direction: row;
+        justify-content: space-between;     
+        padding-left: 7vw;       
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+    }
+    .containerCat {
+        justify-content: center;
+        align-items: center;
+        gap: .8vw;
+        padding: 2.5rem 1rem;
+        border-bottom: 3px solid transparent;
+    }
+    .containerCat:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+    .containerNav .logo {
+        margin: 1rem;
+        margin-left: 3vw;
+    }
+    .containerLinksGap {
+        display: flex;
+        flex-direction: row; 
+        gap: 2vw;
+    }
 }
 
-.containerNav {
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 4vh;
+/*------------------------ Computer Responsive ------------------------*/
 
+@media screen and (min-width : 1200px) {
+    .containerLinks {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 50vw;
+        padding: 0rem 7vw;
+        padding-right: 9vw;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+    }
+    .containerCat {
+        justify-content: center;
+        align-items: center;
+        gap: .8vw;
+        padding: 2.5rem 1rem;
+        border-bottom: 3px solid transparent;
+    }
+    .containerCat:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+    .containerNav .logo {
+        min-width: 7rem;
+        margin: 1rem;
+        margin-left: 3vw;
+        margin-right: 5rem;
+    }
+    .containerLinksGap {
+        display: flex;
+        flex-direction: row; 
+        gap: 2vw;
+    }
+}
+
+/*------------------------ Containers ------------------------*/
+
+.containerLinks {
+    display: flex;
 }
 
 .containerCat {
-    gap: .8vw;
-    padding: 2.5rem 1rem;
     user-select: none;
     text-align: center;
-    border-bottom: 3px solid transparent;
 }
+
+.containerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4vh;
+}
+
+/*------------------------ Texts ------------------------*/
 
 .nbNav {
     font-weight: 700;
-}
-
-.containerCat:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-}
-
-
-
-.containerLinks {
-    justify-content: space-between;
-    max-width: 50vw;
-    gap: 2vw;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
-    padding: 0rem 7vw;
-    padding-right: 9vw;
-
-}
-
-.containerNav .logo {
-    margin: 1rem;
-    margin-left: 3vw;
-    min-width: 7rem;
-    margin-right: 5rem;
 }
 
 a {
@@ -73,3 +147,15 @@ a:hover {
     color: white;
 }
 
+/*------------------------ Others ------------------------*/
+
+.line {
+    width: 42vw;
+    margin-left: 10vw;
+    height: 1px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: absolute;
+    z-index: 999;
+}
