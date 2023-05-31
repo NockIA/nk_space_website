@@ -1,11 +1,12 @@
 /*------------------------ Phone Responsive ------------------------*/
 
-@media screen and (max-width : 760px) {
+@media screen and (max-width : 759px) {
     .line {
         display: none;
     }
     .containerNav {
         padding-top: 0;
+        width: 100%;
     }
     .containerLinks {
         flex-direction: column;
@@ -33,6 +34,8 @@
         align-self: flex-end;
         margin: 2rem;
         margin-bottom: 8vh;
+        transform: scale(1.5);
+        margin-top: 3rem;
     }
     .burgerPlacement:hover{
         cursor: pointer;
@@ -63,6 +66,9 @@
         gap: .8vw;
         padding: 2.5rem 1rem;
         border-bottom: 3px solid transparent;
+    }
+    .containerNav{
+        width: 100%;
     }
     .containerCat:hover {
         border-bottom: 3px solid rgba(255, 255, 255, 0.5);
@@ -129,6 +135,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 4vh;
+    z-index: 999;
 }
 
 /*------------------------ Texts ------------------------*/

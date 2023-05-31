@@ -7,7 +7,7 @@ export const NavBar = () => {
     const [isActive,setIsActive] = useState([true,false,false,false])
     const [isMobile,setIsMobile] = useState(false)
     const [isComputer, setIsComputer] = useState(true)
-    const [isDeployed ,setIsDeployed] = useState(false)
+    const [isDeployed ,setIsDeployed] = useState(true)
     useEffect(() => {
         if (document.location.href === 'http://localhost:5173/Crew') {
           setIsActive([false, false, true, false]);
@@ -27,10 +27,11 @@ export const NavBar = () => {
         if (screenWidth < 760) {
           setIsMobile(true);
           setIsComputer(false);
+          setIsDeployed(true)
         } else {
           setIsComputer(true);
           setIsMobile(false);
-          setIsDeployed(false);
+          setIsDeployed(false)
         }
       }, [screenWidth]);
     return (

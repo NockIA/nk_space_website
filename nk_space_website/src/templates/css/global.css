@@ -3,6 +3,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
+/*------------------------ Phone Responsive ------------------------*/
+
+@media screen and (max-width : 760px) {
+    h1 {
+        font-size: 100px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+}
+
+/*------------------------ Tablet && Computer Responsive ------------------------*/
+
+@media screen and (min-width:760px)  {
+    h1 {
+        font-size: 150px;
+    }
+    h5 {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
 .rowContainer {
     display: flex;
     flex-direction: row;
@@ -22,7 +48,7 @@ h5 {
     font-family: 'Barlow Condensed';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+
     line-height: 34px;
     letter-spacing: 4.725px;
     color: #D0D6F9;
@@ -66,7 +92,6 @@ h1 {
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    font-size: 150px;
     line-height: 172px;
     color: #FFFFFF;
     margin: 0;

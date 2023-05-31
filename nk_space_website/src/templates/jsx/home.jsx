@@ -1,9 +1,17 @@
 import { NavBar } from '../../components/navBar/navBar'
 import '../css/home.css'
+import { useState,useEffect } from 'react';
 
 export const Home = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+          setScreenWidth(window.innerWidth);
+        };      
+        window.addEventListener('resize', handleResize);
+      }, [screenWidth]);
     return (
-        <div className='columnContainer containerHomePage'>
+        <div className='colunmContainer containerHomePage' style={{backgroundImage:((screenWidth < 640) && `url(${"./src/assets/home/background-home-mobile.jpg"})`) || ((screenWidth >= 640 && screenWidth < 1100) && `url(${"./src/assets/home/background-home-tablet.jpg"})`) || `url(${"./src/assets/home/background-home-desktop.jpg"})` }}>
             <NavBar/>
             <div className='columnContainer containerTextHome'>
                 <h5>SO, YOU WANT TO TRAVEL TO</h5>

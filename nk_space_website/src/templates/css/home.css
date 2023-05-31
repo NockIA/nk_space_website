@@ -1,5 +1,74 @@
+/*------------------------ Phone Responsive ------------------------*/
+
+@media screen and (max-width : 759px) {
+    .containerTextHome {
+        width: 90%;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 5vh;
+   
+    }
+    .btnHomePage {
+        padding: 5rem 1.5rem;
+        font-size: 32px;
+        line-height: 37px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .containerHomePage {
+        align-items: center;
+    }
+}
+
+/*------------------------ Tablet Responsive ------------------------*/
+
+@media screen and (min-width:760px) and (max-width : 1199px) {
+    .containerTextHome {
+        width: 90%;
+        margin-top: 8vh;
+        text-align: center;
+    }
+    .btnHomePage {
+        padding: 5rem 1.5rem;
+        font-size: 32px;
+        line-height: 37px;
+        right: 50%;
+        bottom: 20%;
+    }
+    .containerHomePage {
+        align-items: center;
+    }
+    .titleHomePage {
+        margin-top: 2.5rem;
+    }
+    
+}
+
+/*------------------------ Computer Responsive ------------------------*/
+
+@media screen and (min-width : 1200px) {
+    .containerTextHome {
+        width: 23vw;
+        margin-top: 22vh;
+        margin-left: 12vw;
+    }
+    .btnHomePage {
+        padding: 7rem 3.5rem;
+        font-size: 32px;
+        line-height: 37px;
+        right: 15%;
+        bottom: 28%;
+        position: absolute;
+    }
+    .titleHomePage {
+        margin-top: 2.5rem;
+    }
+    
+}
+
+
 .containerHomePage {
-    background-image: url(../../assets/home/background-home-desktop.jpg);
     min-width: 100vw;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -9,31 +78,16 @@
     -moz-filter:  brightness(80%) contrast(100%);
 }
 
-.containerTextHome{
-    width: 23vw;
-    margin-top: 25vh;
-    margin-left: 12vw;
-}
-
-.titleHomePage {
-    margin-top: 2.5rem;
-}
 
 .btnHomePage {
     text-transform: uppercase;
     background-color: #FFFFFF;
     color: black;
-    padding: 7rem 3.5rem;
     border-radius: 999px;
     font-family: 'Bellefair';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
     letter-spacing: 2px;
-    position: absolute;
-    right: 15%;
-    bottom: 20%;
 }
 
 .btnHomePage:hover {
