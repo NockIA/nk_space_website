@@ -9,6 +9,11 @@ app.get('/Destination', async(req, res) => {
     res.json(data)
 });
 
+app.get('/Crew', async(req, res) => {
+    const data  = await fs.promises.readFile("./back/crew.json", {encoding : "utf-8"})
+    res.json(data)
+});
+
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}\n`)
 }); 

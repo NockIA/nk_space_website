@@ -1,0 +1,11 @@
+.containerCrewPage {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../../assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(80%) contrast(100%);
+    -webkit-filter:  brightness(80%) contrast(100%);
+    -moz-filter:  brightness(80%) contrast(100%);
+}
+
