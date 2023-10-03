@@ -25,7 +25,8 @@
 
 ## Render
 
-![render_space_website](https://github.com/NockIA/nk_space_website/assets/103142957/c918f0d1-728f-4080-9835-ea1a428eb47f)
+![alt_text](./nk_space_website/src/assets/render_desktop_destination.png)
+![alt_text](./nk_space_website/src/assets/render_mobile_destination.png)
 
 ## Credits
 
